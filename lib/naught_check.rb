@@ -34,6 +34,15 @@ module Naught
 
     # aliases .naught?
     def vacant?; naught?; end
+    
+    # inverts naught?
+    def aught?; !naught?; end
+    
+    # aliases .aught?
+    def ought?; aught?; end
+
+    # aliases .aught?
+    def owt?; aught?; end
 
   end
 
