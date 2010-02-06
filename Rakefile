@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "naught_check"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Adds .naught? method: tests if value is nil, .blank?, .zero?}
+    gem.description = %Q{Usage: require 'naught_check'; include Naught}
     gem.email = "sean@seanmiller.ca"
     gem.homepage = "http://github.com/smiller/naught_check"
     gem.authors = ["Sean Miller"]
