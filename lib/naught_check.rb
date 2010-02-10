@@ -32,9 +32,7 @@ module Naught
     # aliases .naught?
     def nowt?; naught?; end
 
-    # aliases .naught?
-    def vacant?; naught?; end
-    
+
     # inverts naught?
     def aught?; !naught?; end
     

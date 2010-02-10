@@ -6,7 +6,7 @@ begin
   Jeweler::Tasks.new do |gem|
     gem.name = "naught_check"
     gem.summary = %Q{Adds .naught? method: tests if value is nil, .blank?, .zero?}
-    gem.description = %Q{Usage: require 'naught_check'; include Naught}
+    gem.description = %Q{.naught? like ActiveSupport .blank? and nil-safe Numeric .zero?}
     gem.email = "sean@seanmiller.ca"
     gem.homepage = "http://github.com/smiller/naught_check"
     gem.authors = ["Sean Miller"]

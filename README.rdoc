@@ -4,6 +4,10 @@
 
 Got tired of string.empty? checks in a project blowing up on nil strings.
 
+On a Rails project where numeric fields are declared NOT NULL, you can use ActiveSupport's .blank? and Numeric's .zero? instead. 
+
+But .zero? isn't nil-safe, so if you have possibly-nil numerics you would have to require 'andand' and remember to do number.andand.zero? for every zero-check.  Or reopen Numeric.zero? in the project and add the nil-check.  Or use something like this.
+
 == Usage: 
 
   require 'naught_check'
@@ -16,6 +20,8 @@ Got tired of string.empty? checks in a project blowing up on nil strings.
   {}.naught? => true
   0.naught? => true
   0.00.naught? => true
+
+.aught? does the reverse, so you don't need the double-negative of !value.naught?  (value-not-naught sounds silly)
 
 == Compared to ActiveSupport .blank?
 
